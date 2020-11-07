@@ -1,0 +1,25 @@
+{
+    "name": "Python3.6",
+    "context": "..",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true,
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.lintOnSave": true,
+        "python.formatting.provider": "autopep8"
+    },
+    "appPort": [
+        8000
+    ],
+    "postCreateCommand": "sudo pip install -r requirements.txt",
+    "remoteUser": "vscode",
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "coenraads.bracket-pair-colorizer"
+    ]
+}
